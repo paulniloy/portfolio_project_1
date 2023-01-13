@@ -8,15 +8,19 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #E5E5E5;
 }
-.blue{
+
+.blue {
     color: #562EFF;
 }
-.small{
+
+.small {
     font-weight: 500;
 }
-.bold{
-    font-weight:bolder;
+
+.bold {
+    font-weight: bolder;
 }
+
 .m-top {
     margin-top: 30px;
 }
@@ -49,17 +53,20 @@ body {
     text-decoration: none;
     color: whitesmoke;
 }
-header{
+
+header {
     margin-bottom: 50px;
 }
 
 /* main section started */
-main, .art-flex{
+main,
+.art-flex {
     background-color: rgb(255, 255, 255);
     width: 750px;
     margin: 0 auto;
     padding: 40px 40px;
 }
+
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -81,119 +88,212 @@ main, .art-flex{
 }
 
 /* top blog starts */
-.blogs{
+.blogs {
     display: flex;
     gap: 40px;
 }
-.photo img{
+
+.photo img {
     height: 70px;
     width: 70px;
 }
-.blog-flex{
+
+.blog-flex {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
 }
-.blog-overall{
+
+.blog-overall {
     padding: 0px 20px;
 }
 
 /* courses portion starts */
-.course img{
-    width:100%;
+.course img {
+    width: 100%;
 }
-.art-flex{
+
+.art-flex {
     margin-top: 40px;
     gap: 10px;
     justify-content: space-around;
 }
-.orange{
+
+.orange {
     color: orange;
 }
-.blank{
+
+.blank {
     color: #E5E5E5;
 }
-.flex{
+
+.flex {
     display: flex;
     gap: 5px;
     margin-top: 10px;
 }
-.red{
+
+.red {
     background-color: rgb(255, 192, 192);
     padding: 0px 10px;
     border-radius: 10px;
     color: rgb(255, 78, 78);
 }
-.art-flex{
+
+.art-flex {
     display: flex;
 }
-/* media query for 576px  */
 
-@media screen and (max-width: 576px) {
-    main{
-        width: 400px;
+/* media query for 320px  */
+@media screen and (max-width: 321px) {
+    main {
+        width: 180px;
     }
-    .players{
+
+    .players {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
         column-gap: 20px;
     }
-    .top-players h2{
+
+    .top-players h2 {
         text-align: center;
     }
-    .player{
+
+    .player {
         flex-direction: column;
     }
-    .blog-flex{
-        grid-template-columns: repeat(1,1fr);
+
+    .blog-flex {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .blog-overall  h2{
+
+    .blog-overall h2 {
         text-align: center;
     }
-        .blogs{
+    .blog-overall{
+        padding: 0px -24px;
+    }
+
+    .blogs {
         justify-content: center;
     }
-    .art-flex{
-        width: 400px;
+
+    .art-flex {
+        width: 180px;
         flex-direction: column;
         gap: 40px;
     }
-    .info-flex{
+
+    .info-flex {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .info-flex .flex{
+
+    .info-flex .flex {
         gap: 40px;
     }
-    .navflex{
+
+    .navflex {
         flex-direction: column;
         align-items: center;
     }
-    .navright{
+
+    .navright {
         margin: 20px 0px;
     }
-    .navright img{
+
+    .navright img {
         display: none;
     }
 }
-@media screen and (min-width: 577px) and (max-width: 992px){
-    main{
-        width: 500px;
+/* media query for 425px  */
+
+@media screen and (max-width: 426px) {
+    main {
+        width: 300px;
     }
-    .blogs{
-        align-items: center;
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+        column-gap: 20px;
     }
-    .info-flex .flex{
+
+    .top-players h2 {
+        text-align: center;
+    }
+
+    .player {
         flex-direction: column;
     }
-    .art-flex{
-        width: 500px;
+
+    .blog-flex {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .navflex{
+
+    .blog-overall h2 {
+        text-align: center;
+    }
+
+    .blogs {
+        justify-content: center;
+    }
+
+    .art-flex {
+        width: 300px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .info-flex {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
-    .navright{
+
+    .info-flex .flex {
+        gap: 40px;
+    }
+
+    .navflex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navright {
+        margin: 20px 0px;
+    }
+
+    .navright img {
+        display: none;
+    }
+}
+
+/* media query from 568px  to 992px */
+@media screen and (min-width: 568px) and (max-width: 992px) {
+    main {
+        width: 500px;
+    }
+
+    .blogs {
+        align-items: center;
+    }
+
+    .info-flex .flex {
+        flex-direction: column;
+    }
+
+    .art-flex {
+        width: 500px;
+    }
+
+    .navflex {
+        align-items: center;
+    }
+
+    .navright {
         margin: 20px 0px;
     }
 }
